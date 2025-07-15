@@ -2,9 +2,9 @@
   become: true
   gather_facts: no
   tasks:
-    - name: Install OpenJDK 17
+    - name: Installopenjdk-21-jre
       yum:
-        name: java-17-openjdk-devel
+        name: openjdk-21-jre
         state: present
     - name: add tomcatuser
       user:
