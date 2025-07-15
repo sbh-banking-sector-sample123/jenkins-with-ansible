@@ -4,7 +4,7 @@
   tasks:
     - name: Installopenjdk-21-jre
       yum:
-        name: openjdk-21-jre
+        name: java-21-openjdk
         state: present
     - name: add tomcatuser
       user:
