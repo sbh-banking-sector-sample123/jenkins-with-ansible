@@ -58,7 +58,7 @@
           RemainAfterExit = yes
           ExecStart =/usr/local/apache-tomcat-10.1.43/bin/startup.sh
           ExecStop =/usr/local/apache-tomcat-10.1.43/bin/shutdown.sh
-          ExecReStart =/usr/local/apache-tomcat-10.1.43/bin/shutdown.sh;/usr/local/apache-tomcat-10.1.41/bin/startup.sh
+          ExecReStart =/usr/local/apache-tomcat-10.1.43/bin/shutdown.sh;/usr/local/apache-tomcat-10.1.43/bin/startup.sh
           [Install]
           WantedBy = multi-user.target
     - name: chmod 755 tomcat.service
