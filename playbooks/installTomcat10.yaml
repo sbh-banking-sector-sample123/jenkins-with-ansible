@@ -2,9 +2,9 @@
   become: true
   gather_facts: no
   tasks:
-    - name: Install Java
+    - name: Install OpenJDK 17
       yum:
-        name: java-17-amazon-corretto-devel
+        name: java-17-openjdk-devel
         state: present
     - name: add tomcatuser
       user:
